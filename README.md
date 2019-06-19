@@ -1,5 +1,5 @@
 # Classical-Object-Detection
-Object detection for computer vision using SKlearn's GMM and DBSCAN
+Unsupervised object detection for computer vision using SKlearn's GMM and DBSCAN
 
 
 <img src='Examples/output.png'>
