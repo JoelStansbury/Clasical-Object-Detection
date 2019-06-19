@@ -15,8 +15,8 @@ You guessed it! __Gaussian Mixture!__ First we unravel the image into an __N x 3
 
 ### How do we find clusters?
 
-Now for each of the `Q` primary colors we found using GMM we need to find clusters of pixels close to the respective color. This is done using DBSCAN. DBSCAN requires us to specify the maximum distance between members of the same cluster, this is what `eps` does. In the context of pixels an `eps` of __1__ means all members of the same cluster must be immediately next to another member in order to be considered a member. 
+Now for each of the `Q` primary colors we found using GMM we need to find clusters of pixels close to the respective color. This is done using DBSCAN. DBSCAN requires us to specify the maximum distance between members of the same cluster, this is what `eps` does. In the context of pixels an `eps` of __1.0__ means all members of the same cluster must be immediately adjacent to another member in order to be considered a member.
 
-I use Manhattan distance (p=1) as opposed to Euclidean (p=2). I doubt it matters
+I use Euclidean distance (p=2).
 
 ## Usage
