@@ -20,5 +20,6 @@ for i in objects:
     bbox(i)
 plt.xticks([])
 plt.yticks([])
-plt.savefig('output.png')
+plt.tight_layout(pad=0, w_pad=0, h_pad=0)
+plt.savefig('output.png', bbox_inches="tight", pad_inches=0)
 plt.show()
