@@ -33,3 +33,5 @@ im = np.array(Image.open('test.png'))
 list_of_bboxes = cod(im)
 ```
 
+`cod` returns a list of lists of shape __M x 4__ where M is equal to the number of bounding boxes the algorithm has found. Each bounding box has 4 parameters [cx, cy, w, h] for center_x, center_y, width, and height of the bounding box.
+
