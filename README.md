@@ -5,7 +5,7 @@ Unsupervised object detection for computer vision using SKlearn's GMM and DBSCAN
 <img src='Examples/output.png'>
 
 ### Disclaimer
-There is very likely someone who has implemented this much better than I have, but I like to learn so that is the reason for making this. I'd suggest looking into YOLO for most use cases.
+There is very likely someone who has implemented this much better than I have, my reason for making this is primarily instructional. I'd suggest looking into YOLO for most use cases.
 
 
 ## Usage
