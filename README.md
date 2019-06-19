@@ -1,8 +1,7 @@
 # Classical-Object-Detection
 Object detection for computer vision using SKlearn's KMeans and DBSCAN
 
-<img src='Examples/test.png' width=192px height=108px>
-<img src='Examples/output.png' width=192px height=108px>
+
 
 ### Disclaimer
 There is very likely someone who has implemented this much better than I have, but I like to learn so that is the reason for making this.
