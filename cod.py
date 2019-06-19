@@ -1,14 +1,14 @@
 import numpy as np
 import matplotlib.pyplot as plt
-from sklearn.cluster import KMeans
+from sklearn.mixture import GaussianMixture as GMM
 from sklearn.cluster import DBSCAN
 
 def color_match(im, Q = 5, verbose = False):
     GMM_FEATURE_MATRIX = im.reshape(-1,3)
-    model = KMeans(n_clusters=Q)
+    model = GMM(n_components=Q,covariance_type='spherical')
     CLOSEST_PRIMARY_COLORS = model.fit_predict(GMM_FEATURE_MATRIX)
     if verbose:
-        c = model.cluster_centers_[CLOSEST_PRIMARY_COLORS]
+        c = model.means_[CLOSEST_PRIMARY_COLORS]
         c = c.reshape(im.shape)
         plt.imshow(c.astype(int))
         plt.xticks([])
@@ -18,7 +18,7 @@ def color_match(im, Q = 5, verbose = False):
     return CLOSEST_PRIMARY_COLORS
 
 def spacial_cluster(q, EPS = 5, verbose = False):
-    model_2 = DBSCAN(eps=EPS)
+    model_2 = DBSCAN(eps=EPS, n_jobs=-1)
     r = model_2.fit_predict(q)
 
     objects = []

@@ -2,6 +2,7 @@ from PIL import Image
 import numpy as np
 import matplotlib.pyplot as plt
 from cod import cod
+from time import time
 
 def bbox(params):
     cx,cy,w,h = params
@@ -13,7 +14,10 @@ def bbox(params):
     plt.plot([x0,x1],[y1,y1],color='r',lw=0.5)
 
 im = np.array(Image.open('test.png'))
-objects = cod(im)
+
+t0 = time()
+objects = cod(im, Q = 5, eps=5)
+print(time()-t0)
 
 plt.imshow(im)
 for i in objects:
