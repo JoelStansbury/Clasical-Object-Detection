@@ -18,4 +18,7 @@ objects = cod(im)
 plt.imshow(im)
 for i in objects:
     bbox(i)
+plt.xticks([])
+plt.yticks([])
+plt.savefig('output.png')
 plt.show()
