@@ -23,6 +23,7 @@ Now for each of the `Q` primary colors we found using KMeans we need to find clu
 I use Euclidean distance (p=2).
 
 ## Usage
+Be sure to downsample your images! The image shown above was __300px x 168px__ and took 2.7 seconds. HD images will suffer
 
 ```
 from PIL import Image
