@@ -36,8 +36,6 @@ You guessed it! __GMM!__ First we unravel the image into an __N x 3__ dimentiona
 
 Now for each of the `Q` primary colors we found using GMM we need to find clusters of pixels close to the respective color. This is done using DBSCAN. DBSCAN requires us to specify the maximum distance between members of the same cluster, this is what `eps` does. In the context of pixels, an `eps` of __1.0__ means all members of the same cluster must be immediately adjacent to another member in order to be considered a member.
 
-I use Euclidean distance (p=2).
-
 ## TODO
 
 At some point I intend to add a class intended for tracking an object in a video stream. The impetus for this class is that the most time consuming step within the algorithm is the GMM color clustering step. In a video stream, as long as the scene is not changing, the primary colors should not change, so this step should only be computed at the start.
