@@ -23,5 +23,6 @@ I use Euclidean distance (p=2).
 
 `
 im = np.array(Image.open('test.png'))
+
 list_of_bboxes = cod(im)
 `
