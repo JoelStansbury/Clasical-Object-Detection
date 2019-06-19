@@ -20,3 +20,8 @@ Now for each of the `Q` primary colors we found using KMeans we need to find clu
 I use Euclidean distance (p=2).
 
 ## Usage
+
+`
+im = np.array(Image.open('test.png'))
+list_of_bboxes = cod(im)
+`
