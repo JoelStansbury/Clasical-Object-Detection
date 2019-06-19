@@ -9,7 +9,7 @@ There is very likely someone who has implemented this much better than I have, m
 
 
 ## Usage
-Be sure to downsample your images! The image shown above was __300px x 168px__ and took 1.5 seconds. HD images will suffer
+Be sure to downsample your images! The image shown above was __200px x 150px__ and took 0.5 seconds. HD images will suffer.
 
 ```
 from PIL import Image
