@@ -16,7 +16,7 @@ def bbox(params):
 im = np.array(Image.open('test.png'))
 
 t0 = time()
-objects = cod(im, Q = 5, eps=5)
+objects = cod(im, Q = 2, eps=1,verbose=False)
 print(time()-t0)
 
 plt.imshow(im)
