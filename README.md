@@ -1,5 +1,5 @@
 # Classical-Object-Detection
-Object detection for computer vision using SKlearn's KMeans and DBSCAN
+Object detection for computer vision using SKlearn's GMM and DBSCAN
 
 
 <img src='Examples/output.png'>
@@ -30,14 +30,14 @@ _If there is a group of pixels (close in proximity) within an image that are sim
 
 ### How do we find similar colors?
 
-You guessed it! __KMeans!__ First we unravel the image into an __N x 3__ dimentional matrix, where N is the number of pixels in the image. Next, we simply pass that feature matrix into a KMeans model looking for some predefined number of primary colors. This predefined number (`Q`) is one of the parameters of the function.
+You guessed it! __GMM!__ First we unravel the image into an __N x 3__ dimentional matrix, where N is the number of pixels in the image. Next, we simply pass that feature matrix into a GMM model looking for some predefined number of primary colors. This predefined number (`Q`) is one of the parameters of the function.
 
 ### How do we find clusters?
 
-Now for each of the `Q` primary colors we found using KMeans we need to find clusters of pixels close to the respective color. This is done using DBSCAN. DBSCAN requires us to specify the maximum distance between members of the same cluster, this is what `eps` does. In the context of pixels, an `eps` of __1.0__ means all members of the same cluster must be immediately adjacent to another member in order to be considered a member.
+Now for each of the `Q` primary colors we found using GMM we need to find clusters of pixels close to the respective color. This is done using DBSCAN. DBSCAN requires us to specify the maximum distance between members of the same cluster, this is what `eps` does. In the context of pixels, an `eps` of __1.0__ means all members of the same cluster must be immediately adjacent to another member in order to be considered a member.
 
 I use Euclidean distance (p=2).
 
 ## TODO
 
-At some point I intend to add a class intended for tracking an object in a video stream. The impetus for this class is that the most time consuming step within the algorithm is the KMeans color clustering step. In a video stream, as long as the scene is not changing, the primary colors should not change, so this step should only be computed at the start.
+At some point I intend to add a class intended for tracking an object in a video stream. The impetus for this class is that the most time consuming step within the algorithm is the GMM color clustering step. In a video stream, as long as the scene is not changing, the primary colors should not change, so this step should only be computed at the start.
