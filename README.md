@@ -1,5 +1,7 @@
 # Classical-Object-Detection
-Unsupervised object detection for computer vision using SKlearn's GMM and DBSCAN. It is quite Computationally Expensive
+Unsupervised object detection for computer vision using SKlearn's GMM and DBSCAN. 
+
+** Warning ** It is NOT fast. The image below took 0.5 seconds
 
 
 <img src='Examples/output.png' height=200px>
