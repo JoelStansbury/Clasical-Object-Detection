@@ -5,7 +5,7 @@ Unsupervised object detection for computer vision using SKlearn's GMM and DBSCAN
 <img src='Examples/output.png' height=200px>
 
 ### Disclaimer
-There is very likely someone who has implemented this much better than I have, my reason for making this is primarily instructional.
+__Computationally Expensive__. My reason for making this is primarily instructional.
 
 
 ## Usage
