@@ -35,3 +35,6 @@ list_of_bboxes = cod(im, Q=5, eps=5)
 
 `cod` returns a list of lists of shape __M x 4__ where M is equal to the number of bounding boxes the algorithm has found. Each bounding box has 4 parameters [cx, cy, w, h] for center_x, center_y, width, and height of the bounding box.
 
+## TODO
+
+At some point I intend to add a class intended for tracking an object in a video stream. The impetus for this class is that the most time consuming step within the algorithm is the KMeans color clustering step. In a video stream, as long as the scene is not changing, the primary colors should not change, so this step should only be computed at the start.
