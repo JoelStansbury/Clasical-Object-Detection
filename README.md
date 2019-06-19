@@ -38,4 +38,4 @@ Now for each of the `Q` primary colors we found using GMM we need to find cluste
 
 ## TODO
 
-At some point I intend to add a class intended for tracking an object in a video stream. The impetus for this class is that the most time consuming step within the algorithm is the GMM color clustering step. In a video stream, as long as the scene is not changing, the primary colors should not change, so this step should only be computed at the start.
+At some point I intend to add a class intended for tracking an object in a video stream. The impetus for this class is that the most time consuming step within the algorithm is the GMM color clustering step. In a video, we should be able to reuse the dominant colors for each frame.
