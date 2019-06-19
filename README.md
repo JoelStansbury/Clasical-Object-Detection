@@ -5,7 +5,7 @@ Object detection for computer vision using SKlearn's KMeans and DBSCAN
 <img src='Examples/output.png'>
 
 ### Disclaimer
-There is very likely someone who has implemented this much better than I have, but I like to learn so that is the reason for making this.
+There is very likely someone who has implemented this much better than I have, but I like to learn so that is the reason for making this. I'd suggest looking into YOLO for most use cases.
 
 ## Technical Details
 
