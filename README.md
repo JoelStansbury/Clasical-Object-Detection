@@ -11,7 +11,7 @@ _If there is a group of pixels (close in proximity) within an image that are sim
 
 ### How do we find similar colors?
 
-You guessed it! __KMeans!__ First we unravel the image into an __N x 3__ dimentional matrix, where N is the number of pixels in the image. Next, we simply pass that feature matrix into a Gaussian Mixture model looking for some predefined number of primary colors. This predefined number (`Q`) is one of the parameters of the function.
+You guessed it! __KMeans!__ First we unravel the image into an __N x 3__ dimentional matrix, where N is the number of pixels in the image. Next, we simply pass that feature matrix into a KMeans model looking for some predefined number of primary colors. This predefined number (`Q`) is one of the parameters of the function.
 
 ### How do we find clusters?
 
