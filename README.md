@@ -21,8 +21,12 @@ I use Euclidean distance (p=2).
 
 ## Usage
 
-`
-im = np.array(Image.open('test.png'))
+```
+from PIL import Image
+import numpy as np
+from cod import cod
 
+im = np.array(Image.open('test.png'))
 list_of_bboxes = cod(im)
-`
+```
+
