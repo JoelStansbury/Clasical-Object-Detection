@@ -3,6 +3,8 @@ Unsupervised object detection for computer vision using SKlearn's GMM and DBSCAN
 
 ** Warning ** It is NOT fast. The image below took 0.5 and 6 seconds respectively
 
+Also, I suspect a simple contour map will perform better than this for most cases
+
 
 <img src='Examples/output.png' height=200px>
 <img src='Examples/output1.png' height=200px>
