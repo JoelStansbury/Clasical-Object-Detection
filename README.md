@@ -1,14 +1,14 @@
 # Classical-Object-Detection
 Unsupervised object detection for computer vision using SKlearn's GMM and DBSCAN. 
 
-** Warning ** It is NOT fast. The image below took 0.5 seconds
+** Warning ** It is NOT fast. The image below took 0.5 and 6 seconds respectively
 
 
 <img src='Examples/output.png' height=200px>
 <img src='Examples/output1.png' height=200px>
 
 ## Usage
-Be sure to downsample your images! The image shown above was __200px x 150px__ and took 0.5, and 6 seconds respectively. HD images will suffer.
+Be sure to downsample your images! The dial image shown above is __200px x 150px__ and took 0.5. HD images will suffer.
 
 ```
 from PIL import Image
